@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGODB_URL = process.env.MONGO_URL || 'mongodb+srv://gowtham:Gowtham123@cluster0.o7fe2uc.mongodb.net/Blog?retryWrites=true&w=majority';
+const MONGODB_URL =  'mongodb+srv://gowtham:Gowtham123@cluster0.o7fe2uc.mongodb.net/Blog?retryWrites=true&w=majority';
 
 const connectToDatabase = async () => {
   try {
