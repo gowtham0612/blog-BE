@@ -1,11 +1,12 @@
 const express = require("express");
+const morgan = require("morgan");
 const app = express();
 require("dotenv").config;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.use(morgan("dev"));
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send("Welcome to G-Blog");
 });
 app.post("/none", (req, res) => {
   const { helo } = req.body;
